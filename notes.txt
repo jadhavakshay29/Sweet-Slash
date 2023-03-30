@@ -1,3 +1,15 @@
-The slideCandy() function slides the candies down on the game board. It iterates through each column of the board, starting from the bottom row and moving upwards. If a candy is found in a given position, it is moved down to the next available empty slot in that column. This is achieved by keeping track of the index of the next empty slot in the column (ind variable) and moving the candy to that slot while decrementing the index. If there are no empty slots in the column, the candy stays where it is. Finally, any remaining empty slots in the column are filled with blank candies.
+The slideCandy()
 
-The generateCandy() function generates new candies after the slide has been performed. It checks each column from the top row downwards, and if the top slot in that column is blank, it generates a new candy by calling the randomCandy() function and sets the image source of the top slot to the image of the generated candy.
+ function slides the candies down on the game board. It iterates through each column of the board,
+ starting from the bottom row and moving upwards. If a candy is found in a given position, it is moved down to the
+next available empty slot in that column. This is achieved by keeping track of the index of the next empty slot
+in the column (ind variable) and moving the candy to that slot while decrementing the index.
+If there are no empty slots in the column, the candy stays where it is. Finally, any remaining empty slots in the column
+are filled with blank candies.
+
+The generateCandy() 
+
+ function generates new candies after the slide has been performed.
+ It checks each column from the top row downwards, and if the top slot in that column is blank,
+it generates a new candy by calling the randomCandy() function and sets the image source of the top slot
+ to the image of the generated candy.
