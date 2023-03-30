@@ -198,7 +198,7 @@ function slideCandy() {
 //after crush slide we'll generate new candies
 function generateCandy() {
     for (let c = 0; c < columns;  c++) {
-        if (board[0][c].src.includes("blank")) {
+        if (board[0][c].src.includes("blank")) {   //board[0] means ekek row ko rad=ndomly fill karega
             board[0][c].src = "./images/" + randomCandy() + ".png";
         }
     }
